@@ -33,7 +33,9 @@ public class DecryptionLab {
 
                 m.setAccessible(true); // not needed here but safe practice
                 //TODO - you need to invoke the method to get the decrypted version!
+
 		Object result = "This is not the unencrypted message!  See the TODO above";
+				result = m.invoke(toolbox, key);
                 System.out.println("🧰 " + methodName + ": " + result);
             }
         }
